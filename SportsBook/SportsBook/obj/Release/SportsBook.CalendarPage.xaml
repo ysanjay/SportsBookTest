@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.CalendarPage"
+	Title="Calendar">
+	<ContentPage.Content>
+		<RelativeLayout
+			BackgroundColor="#2C4A63">
+
+			<Grid
+				BackgroundColor="Transparent"
+				ColumnSpacing="0"
+				RowSpacing="0"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="60"/>
+					<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+				<!-- Row 0 -->
+				
+				<Grid
+					Grid.Row="0"
+					Grid.Column="0"
+					BackgroundColor="#4B5983">
+					<Grid.RowDefinitions></Grid.RowDefinitions>		
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="40"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="40"/>
+					</Grid.ColumnDefinitions>
+					<Button
+						Grid.Row="0"
+						Grid.Column="0"
+						BackgroundColor="Transparent"
+						Image="Previous">
+					</Button>
+					<Label
+						Grid.Row="0"
+						Grid.Column="1"
+						VerticalTextAlignment="Center"
+						HorizontalTextAlignment="Center"
+						TextColor="#FFFFFF"
+						FontSize="14"
+						FontAttributes="Bold"
+						Text="Month Year">
+					</Label>
+					<Button
+						Grid.Row="0"
+						Grid.Column="2"
+						BackgroundColor="Transparent"
+						Image="Next">
+					</Button>
+					<!--
+					<Button
+						Grid.Row="0"
+						Grid.Column="3"
+						HeightRequest="30"
+						WidthRequest="140"
+						VerticalOptions="Center"
+						HorizontalOptions="End"
+						BackgroundColor="#7184BD"
+						Margin="0,0,12,0"
+						Text="Recommendation"
+						TextColor="#FFFFFF"
+						FontSize="14"
+						FontAttributes="Bold"
+						BorderRadius="6">
+					</Button>
+					-->
+				</Grid>
+
+				<!-- Row 1 -->
+				
+				<Grid
+					Grid.Row="1"
+					Grid.Column="0"
+					BackgroundColor="Transparent"
+					ColumnSpacing="0"
+					RowSpacing="0">
+					<Grid.RowDefinitions></Grid.RowDefinitions>		
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="100"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+
+					<!-- Column 0 -->
+
+					<ListView
+					Grid.Row="0"
+					Grid.Column="0"
+					x:Name="varListViewDay"
+					SeparatorVisibility="None"
+					RowHeight="90"
+					BackgroundColor="#2C4A63"
+					Margin="0"
+					ItemSelected="Handle_ItemSelected_MonthDay">
+    						<ListView.ItemTemplate>
+      							<DataTemplate>
+        							<ViewCell>
+									<Grid
+										BackgroundColor="Transparent"
+										RowSpacing="0">
+										<Grid.RowDefinitions>
+										</Grid.RowDefinitions>
+										<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+										<StackLayout
+											Grid.Row="0"
+											Grid.Column="0"
+											VerticalOptions="Center"
+											Spacing="0">
+											<Label
+												Text="{Binding day}" 
+												TextColor="#9CACBA"
+												FontSize="26"
+												FontAttributes="Bold"
+												BackgroundColor="Transparent"
+												HorizontalTextAlignment="Center"
+												VerticalTextAlignment="Center"
+												Margin="0,0,0,0">
+											</Label>
+											<Label
+												Text="Day" 
+												TextColor="#BFCDD6"
+												FontSize="14"
+												BackgroundColor="Transparent"
+												HorizontalTextAlignment="Center"
+												VerticalTextAlignment="Center">
+											</Label>
+											<StackLayout
+												Orientation="Horizontal"
+												HorizontalOptions="Center"
+												Margin="6">
+												<Button HeightRequest="8" WidthRequest="8" HorizontalOptions="Center" VerticalOptions="Center" BorderRadius="4" BackgroundColor="#A4CFB5"></Button>
+												<Button HeightRequest="8" WidthRequest="8" HorizontalOptions="Center" VerticalOptions="Center" BorderRadius="4" BackgroundColor="#A28CBC"></Button>
+											</StackLayout>
+										</StackLayout>
+
+
+
+
+										<BoxView
+											Grid.Row="0"
+											Grid.Column="0"
+											BackgroundColor="#3A6085"
+											VerticalOptions="End"
+											HorizontalOptions="Fill"
+											HeightRequest="1">
+										</BoxView>
+
+									</Grid>
+									</ViewCell>
+      							</DataTemplate>
+    						</ListView.ItemTemplate>
+  						</ListView>
+
+  					<!-- Column 1 -->
+
+					<ScrollView
+						Grid.Row="0"
+						Grid.Column="1"
+						Margin="0"
+						BackgroundColor="#3A6085">
+
+
+						<Grid
+							BackgroundColor="Transparent"
+							Margin="0">
+
+							<Grid.RowDefinitions></Grid.RowDefinitions>
+							<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+							<!-- For Time listing -->
+							<RelativeLayout
+								Grid.Row="0"
+								Grid.Column="0"
+								BackgroundColor="Transparent"
+								Margin="0">
+
+								<ListView
+									x:Name="varListViewDayTime"
+									BackgroundColor="Transparent"
+									SeparatorVisibility="None"
+									RowHeight="50">
+									<ListView.ItemTemplate>
+										<DataTemplate>
+											<ViewCell>
+												<Grid
+													BackgroundColor="Transparent">
+													<Grid.RowDefinitions></Grid.RowDefinitions>
+													<Grid.ColumnDefinitions>
+														<ColumnDefinition Width="60"/>
+														<ColumnDefinition Width="*"/>
+													</Grid.ColumnDefinitions>
+													<Label
+														Grid.Row="0"
+														Grid.Column="0"
+														Text="{Binding timeLabel}"
+														TextColor="#9CACBA"
+														FontSize="14"
+														VerticalTextAlignment="Center"
+														HorizontalTextAlignment="End"
+														Margin="0,0,4,0">
+													</Label>
+													<BoxView
+														Grid.Row="0"
+														Grid.Column="1"
+														BackgroundColor="#537492"
+														VerticalOptions="Center"
+														HorizontalOptions="Fill"
+														HeightRequest="1">
+													</BoxView>
+												</Grid>
+											</ViewCell>
+										</DataTemplate>
+									</ListView.ItemTemplate>
+								</ListView>
+							</RelativeLayout>
+
+
+							<!-- For Event listing -->
+							<RelativeLayout
+								Grid.Row="0"
+								Grid.Column="0"
+								BackgroundColor="Transparent"
+								Margin="0">
+							
+							</RelativeLayout>
+
+							
+						</Grid>
+						
+					</ScrollView>
+					
+				</Grid>
+
+				<!-- Row 2 -->
+				
+			</Grid>
+
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

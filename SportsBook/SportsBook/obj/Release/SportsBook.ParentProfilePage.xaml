@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns         ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:Local    ="clr-namespace:SportsBook;assembly:SportsBook"
+	x:Class        ="SportsBook.ParentProfilePage"
+	BackgroundColor="#0C3851"
+	Title="Profile">
+	<ContentPage.Content>
+		<RelativeLayout
+			BackgroundColor="Transparent">
+			<BoxView
+				BackgroundColor               ="#16A9D1"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				HeightRequest                 ="60">
+			</BoxView>
+			<ScrollView
+				BackgroundColor                ="Transparent"
+				Margin                         ="0"
+				RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+				<StackLayout
+					BackgroundColor                ="Transparent"
+					Margin                         ="15"
+					RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+					RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+					<RelativeLayout
+						BackgroundColor="Transparent"
+						Margin         ="0">
+						<Frame
+							HasShadow                      ="false"
+							BackgroundColor                ="#144D74"
+							RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+							RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+						</Frame>
+						<RelativeLayout
+							BackgroundColor="Transparent">
+							<Frame
+								x:Name                        ="refFrame"
+								HasShadow                     ="false"
+								BackgroundColor               ="#FFFFFF"
+								HeightRequest                 ="156"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+							</Frame>
+							<Local:ImageCircle
+								Source         ="people"
+								BackgroundColor="Transparent"
+								HeightRequest  ="110"
+								WidthRequest   ="110"
+								Margin         ="15,30,0,0">
+							</Local:ImageCircle>
+							<StackLayout
+								Padding                        ="0,20,0,20"
+								BackgroundColor                ="Transparent"
+								RelativeLayout.XConstraint     ="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=X, Factor=0.5, Constant=140}"
+								RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=Height}">
+								<Label
+									Text             ="Diana Mitchell"
+									FontSize         ="24"
+									TextColor        ="#22385C"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+								<Label
+									Text             ="Los Angeles, CA"
+									FontSize         ="18"
+									TextColor        ="#15A7D1"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+								<Label
+									Text             ="E-MAIL"
+									FontSize         ="12"
+									TextColor        ="#C4CAD3"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+								<Label
+									Text             ="diana.mitchell@gmail.com"
+									FontSize         ="13"
+									TextColor        ="#111111"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+								<Label
+									Text             ="CONTACT"
+									FontSize         ="12"
+									TextColor        ="#C4CAD3"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+								<Label
+									Text             ="+00 896 497 232"
+									FontSize         ="13"
+									TextColor        ="#111111"
+									HorizontalOptions="Center"
+									WidthRequest     ="170">
+								</Label>
+							</StackLayout>
+
+							<StackLayout
+								BackgroundColor               ="#136D99"
+								Margin                        ="0,0,0,0"
+								HeightRequest                 ="80"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+								RelativeLayout.YConstraint    ="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=Y, Factor=1, Constant=190}">
+								<Grid
+									IsVisible    ="true"
+									x:Name       ="varGridOne"
+									ColumnSpacing="1">
+									<Grid.RowDefinitions>
+										<RowDefinition
+											Height="80" />
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition
+											Width="60" />
+										<ColumnDefinition
+											Width="100" />
+										<ColumnDefinition
+											Width="*" />
+									</Grid.ColumnDefinitions>
+
+									<Button
+										Grid.Row         ="0"
+										Grid.Column      ="0"
+										HeightRequest    ="40"
+										WidthRequest     ="40"
+										BackgroundColor  ="Transparent"
+										BorderRadius     ="20"
+										HorizontalOptions="Center"
+										VerticalOptions  ="Center"
+										Clicked          ="Handle_Clicked_ShowNotificationView">
+									</Button>
+									<Image
+										Grid.Row         ="0"
+										Grid.Column      ="0"
+										HeightRequest    ="20"
+										WidthRequest     ="20"
+										HorizontalOptions="Center"
+										Source           ="icon_email"
+										Aspect           ="AspectFit"
+										VerticalOptions  ="Center"
+										IsEnabled        ="false">
+									</Image>
+									<Label
+										Grid.Row             ="0"
+										Grid.Column          ="1"
+										Text                 ="Diana Mitchell"
+										FontSize             ="18"
+										TextColor            ="#FFFFFF"
+										HorizontalOptions    ="Start"
+										VerticalTextAlignment="Center"
+										BackgroundColor      ="Transparent">
+									</Label>
+									<Grid
+										Grid.Row   ="0"
+										Grid.Column="2">
+										<ScrollView
+											Orientation="Horizontal">
+											<StackLayout
+												Orientation="Horizontal">
+												<Local:ImageCircle
+													Source         ="people"
+													BackgroundColor="Transparent"
+													HeightRequest  ="60"
+													WidthRequest   ="60"
+													Margin         ="10" />
+												<Local:ImageCircle
+													Source         ="people"
+													BackgroundColor="Transparent"
+													HeightRequest  ="60"
+													WidthRequest   ="60"
+													Margin         ="10" />
+												<Local:ImageCircle
+													Source         ="people"
+													BackgroundColor="Transparent"
+													HeightRequest  ="60"
+													WidthRequest   ="60"
+													Margin         ="10" />
+											</StackLayout>
+										</ScrollView>
+									</Grid>
+								</Grid>
+							</StackLayout>
+							<StackLayout
+								Spacing                       ="1"
+								Margin                        ="0"
+								BackgroundColor               ="Transparent"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+								RelativeLayout.YConstraint    ="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=Y, Factor=1, Constant=270}">
+								<Grid
+									IsVisible      ="true"
+									x:Name         ="varGrindTwo"
+									BackgroundColor="Transparent"
+									Margin         ="0"
+									RowSpacing     ="1"
+									ColumnSpacing  ="1">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="70*"/>
+										<RowDefinition Height="70*"/>
+										<RowDefinition Height="70*"/>
+										<RowDefinition Height="100"/>
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										
+									</Grid.ColumnDefinitions>
+									<StackLayout
+										Grid.Row         ="0"
+										Grid.Column      ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="BIRTHDATE"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="02/02/2000"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="0"
+										Grid.Column      ="1"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="SCHOOL"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="Mission San Jose"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="1"
+										Grid.Column      ="0"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="SPORTS"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="Cricket"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="1"
+										Grid.Column      ="1"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="POSITION"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="Batsman"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="2"
+										Grid.Column      ="0"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="HEIGHT"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="5 ft 2 in"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="2"
+										Grid.Column      ="1"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Label
+											TextColor              ="#8DB7C1"
+											FontSize               ="12"
+											BackgroundColor        ="Transparent"
+											Text                   ="WEIGHT"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,10,0,0" />
+										<Label
+											TextColor              ="#FFFFFF"
+											FontSize               ="14"
+											BackgroundColor        ="Transparent"
+											Text                   ="99 lbs"
+											HorizontalTextAlignment="Start"
+											Margin                 ="20,0,0,0" />
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="3"
+										Grid.Column      ="0"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Button
+											Text             ="Calendar"
+											TextColor        ="#FFFFFF"
+											BackgroundColor  ="#16A9D1"
+											BorderRadius     ="20"
+											WidthRequest     ="120"
+											HorizontalOptions="End"
+											Margin           ="0,30,10,15"
+											Clicked="Handle_Clicked_Calendar">
+										</Button>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="3"
+										Grid.Column      ="1"
+										Margin           ="0"
+										HorizontalOptions="Fill"
+										BackgroundColor  ="Transparent">
+										<Button
+											Text             ="View More"
+											TextColor        ="#FFFFFF"
+											BackgroundColor  ="#16A9D1"
+											BorderRadius     ="20"
+											WidthRequest     ="120"
+											HorizontalOptions="Start"
+											Margin           ="10,30,0,15">
+										</Button>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="0"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="0"
+										Grid.Column      ="1"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="1"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="1"
+										Grid.Column      ="1"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="2"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="2"
+										Grid.Column      ="1"
+										VerticalOptions  ="End"
+										HorizontalOptions="FillAndExpand">
+										<BoxView
+											BackgroundColor="#136D99"
+											HeightRequest  ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="0"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="End">
+										<BoxView
+											BackgroundColor="#136D99"
+											WidthRequest   ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="1"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="End">
+										<BoxView
+											BackgroundColor="#136D99"
+											WidthRequest   ="1">
+										</BoxView>
+									</StackLayout>
+									<StackLayout
+										Grid.Row         ="2"
+										Grid.Column      ="0"
+										VerticalOptions  ="End"
+										HorizontalOptions="End">
+										<BoxView
+											BackgroundColor="#136D99"
+											WidthRequest   ="1">
+										</BoxView>
+									</StackLayout>
+								</Grid>
+							</StackLayout>
+
+
+						</RelativeLayout>
+
+
+		
+						<RelativeLayout
+							IsVisible                     ="false"
+							x:Name                        ="varNotificationView"
+							BackgroundColor               ="Transparent"
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+							<Grid
+								ColumnSpacing                 ="0"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+								<Grid.RowDefinitions>
+									<RowDefinition
+										Height="156" />
+									<RowDefinition
+										Height="40" />
+									<RowDefinition
+										Height="50" />
+									<RowDefinition
+										Height="10" />
+									<RowDefinition
+										Height="*" />
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition
+										Width="60" />
+									<ColumnDefinition
+										Width="*" />
+									<ColumnDefinition
+										Width="60" />
+								</Grid.ColumnDefinitions>
+
+								<Button
+									Grid.Row         ="1"
+									Grid.Column      ="2"
+									BackgroundColor  ="#16A9D0"
+									Text             ="X"
+									TextColor        ="White"
+									BorderRadius     ="20"
+									HeightRequest    ="40"
+									WidthRequest     ="40"
+									HorizontalOptions="Center"
+									Clicked          ="Handle_Clicked_CloseNotificationView">
+								</Button>
+
+								<Button
+									Grid.Row         ="2"
+									Grid.Column      ="0"
+									HeightRequest    ="40"
+									WidthRequest     ="40"
+									BackgroundColor  ="#144D74"
+									BorderRadius     ="20"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Button>
+								<Image
+									Grid.Row         ="2"
+									Grid.Column      ="0"
+									HeightRequest    ="20"
+									WidthRequest     ="20"
+									HorizontalOptions="Center"
+									Source           ="icon_email"
+									Aspect           ="AspectFit"
+									VerticalOptions  ="Center">
+								</Image>
+								<StackLayout
+									Grid.Row       ="2"
+									Grid.Column    ="1"
+									Spacing        ="0"
+									BackgroundColor="Transparent"
+									VerticalOptions="Center">
+									<Label
+										Text          ="Notifications"
+										TextColor     ="#FFFFFF"
+										FontAttributes="Bold"
+										FontSize      ="18">
+									</Label>
+									<Label
+										Text     ="You have 1 unread notification"
+										TextColor="#16A9D1"
+										FontSize ="14">
+									</Label>
+								</StackLayout>
+								<!--
+								<ListView
+									Grid.Row           ="4"
+									Grid.Column        ="1"
+									x:Name             ="varNotificationList"
+									SeparatorVisibility="None"
+									BackgroundColor    ="Transparent"
+									RowHeight          ="50">
+									<ListView.ItemTemplate>
+										<DataTemplate>
+											<ViewCell
+												Height="9">
+												<Grid
+													RowSpacing   ="0"
+													ColumnSpacing="2">
+													<Grid.RowDefinitions>
+														<RowDefinition
+															Height="*" />
+														<RowDefinition
+															Height="*" />
+													</Grid.RowDefinitions>
+													<Grid.ColumnDefinitions>
+														<ColumnDefinition
+															Width="10" />
+														<ColumnDefinition
+															Width="*" />
+													</Grid.ColumnDefinitions>
+													<Button
+														Grid.Row         ="0"
+														Grid.Column      ="0"
+														BackgroundColor  ="Lime"
+														HeightRequest    ="6"
+														WidthRequest     ="6"
+														BorderRadius     ="3"
+														HorizontalOptions="Center"
+														VerticalOptions  ="Start"
+														Margin           ="0,8,0,0" />
+													<Label
+														Grid.Row       ="0"
+														Grid.Column    ="1"
+														Text           ="{Binding notificationTitle}"
+														TextColor      ="#FFFFFF"
+														FontSize       ="14"
+														HeightRequest  ="35"
+														BackgroundColor="Transparent"
+														VerticalOptions="StartAndExpand">
+													</Label>
+													<Label
+														Grid.Row       ="1"
+														Grid.Column    ="1"
+														Text           ="{Binding notificationTime}"
+														TextColor      ="#000000"
+														FontSize       ="12"
+														HeightRequest  ="15"
+														BackgroundColor="Transparent">
+													</Label>
+												</Grid>
+											</ViewCell>
+										</DataTemplate>
+									</ListView.ItemTemplate>
+								</ListView>
+								-->
+							</Grid>
+						</RelativeLayout>
+
+
+
+					</RelativeLayout>
+				</StackLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

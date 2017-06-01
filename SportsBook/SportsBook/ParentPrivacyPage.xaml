@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns     ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x    ="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook"
+	x:Class    ="SportsBook.ParentPrivacyPage"
+	Title      ="Setting">
+	<ContentPage.Content>
+		<RelativeLayout
+			BackgroundColor="Transparent">
+			<BoxView
+				BackgroundColor               ="#16A9D1"
+				HeightRequest                 ="60"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+			</BoxView>
+			<ScrollView
+				BackgroundColor                ="Transparent"
+				RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"
+				Padding                        ="15">
+				<RelativeLayout
+					BackgroundColor="White">
+					<Grid
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+						VerticalOptions               ="Start"
+						BackgroundColor               ="White"
+						RowSpacing                    ="8">
+						<Grid.RowDefinitions>
+							<RowDefinition
+								Height="30" />
+							<RowDefinition
+								Height="40" />
+							<RowDefinition
+								Height="100" />
+							<RowDefinition
+								Height="100" />
+							<RowDefinition
+								Height="100" />
+							<RowDefinition
+								Height="80" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+						</Grid.ColumnDefinitions>
+						<!-- Grid Row = 0 Title-->
+						<Label
+							Grid.Row             ="0"
+							Grid.Column          ="0"
+							Text                 ="Profile"
+							Margin               ="12,0,0,0"
+							TextColor            ="Silver"
+							FontSize             ="14"
+							VerticalOptions      ="End"
+							VerticalTextAlignment="Center"
+							BackgroundColor      ="Transparent">
+						</Label>
+						<!-- Grid Row = 1 Radio Button-->
+						<StackLayout
+							Grid.Row       ="1"
+							Grid.Column    ="0"
+							BackgroundColor="Transparent"
+							Orientation    ="Horizontal"
+							Padding        ="8,0,0,0"
+							Spacing        ="0">
+							<Button
+								x:Name           ="varButtonR1"
+								BackgroundColor  ="White"
+								HorizontalOptions="Start"
+								VerticalOptions  ="Center"
+								Grid.Row         ="0"
+								Grid.Column      ="0"
+								Clicked          ="Handle_Clicked_RadioButton"
+								StyleId          ="R1"
+								Image            ="radio"
+								Text             ="Private"
+								TextColor        ="#0C3851"
+								BorderRadius     ="0"
+								BorderColor      ="Transparent"
+								BorderWidth      ="0"
+								FontSize         ="12">
+							</Button>
+							<Button
+								x:Name           ="varButtonR2"
+								BackgroundColor  ="White"
+								HorizontalOptions="Start"
+								VerticalOptions  ="Center"
+								Grid.Row         ="0"
+								Grid.Column      ="0"
+								Clicked          ="Handle_Clicked_RadioButton"
+								StyleId          ="R2"
+								Image            ="radio"
+								Text             ="Friends"
+								TextColor        ="#0C3851"
+								BorderRadius     ="0"
+								BorderColor      ="Transparent"
+								BorderWidth      ="0"
+								FontSize         ="12">
+							</Button>
+							<Button
+								x:Name           ="varButtonR3"
+								BackgroundColor  ="White"
+								HorizontalOptions="Start"
+								VerticalOptions  ="Center"
+								Grid.Row         ="0"
+								Grid.Column      ="0"
+								Clicked          ="Handle_Clicked_RadioButton"
+								StyleId          ="R3"
+								Image            ="radio"
+								Text             ="Public"
+								TextColor        ="#0C3851"
+								BorderRadius     ="0"
+								BorderColor      ="Transparent"
+								BorderWidth      ="0"
+								FontSize         ="12">
+							</Button>
+						</StackLayout>
+						<!-- Grid Row = 2 Grid:Yes/No-->
+						<Grid
+							Grid.Row       ="2"
+							Grid.Column    ="0"
+							BackgroundColor="#EDEFF5"
+							RowSpacing     ="0">
+							<Grid.RowDefinitions>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+							</Grid.ColumnDefinitions>
+							<Grid
+								Grid.Row   ="0"
+								Grid.Column="0"
+								RowSpacing ="0"
+								Margin     ="10,0,0,0">
+								<Grid.RowDefinitions>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition
+										Width="*" />
+									<ColumnDefinition
+										Width="80" />
+								</Grid.ColumnDefinitions>
+								<Label
+									Grid.Row               ="0"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Allow messaging with Coach"
+									TextColor              ="#2A6C93"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="0"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+								<Label
+									Grid.Row               ="1"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Receive copy of message"
+									TextColor              ="#7A91A3"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="1"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+							</Grid>
+						</Grid>
+						<!-- Grid Row = 3 Grid:Yes/No-->
+						<Grid
+							Grid.Row       ="3"
+							Grid.Column    ="0"
+							BackgroundColor="#EDEFF5"
+							RowSpacing     ="0">
+							<Grid.RowDefinitions>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+							</Grid.ColumnDefinitions>
+							<Grid
+								Grid.Row   ="0"
+								Grid.Column="0"
+								RowSpacing ="0"
+								Margin     ="10,0,0,0">
+								<Grid.RowDefinitions>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition
+										Width="*" />
+									<ColumnDefinition
+										Width="80" />
+								</Grid.ColumnDefinitions>
+								<Label
+									Grid.Row               ="0"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Allow messaging with Friends"
+									TextColor              ="#2A6C93"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="0"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+								<Label
+									Grid.Row               ="1"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Receive copy of message"
+									TextColor              ="#7A91A3"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="1"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+							</Grid>
+						</Grid>
+						<!-- Grid Row = 4 Grid:Yes/No-->
+						<Grid
+							Grid.Row       ="4"
+							Grid.Column    ="0"
+							BackgroundColor="#EDEFF5"
+							RowSpacing     ="0">
+							<Grid.RowDefinitions>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+							</Grid.ColumnDefinitions>
+							<Grid
+								Grid.Row   ="0"
+								Grid.Column="0"
+								RowSpacing ="0"
+								Margin     ="10,0,0,0">
+								<Grid.RowDefinitions>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition
+										Width="*" />
+									<ColumnDefinition
+										Width="80" />
+								</Grid.ColumnDefinitions>
+								<Label
+									Grid.Row               ="0"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Allow messaging with Public"
+									TextColor              ="#2A6C93"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="0"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+								<Label
+									Grid.Row               ="1"
+									Grid.Column            ="0"
+									BackgroundColor        ="Transparent"
+									Text                   ="Receive copy of message"
+									TextColor              ="#7A91A3"
+									FontSize               ="14"
+									VerticalTextAlignment  ="Center"
+									HorizontalTextAlignment="Start">
+								</Label>
+								<Local:csmSwitch
+									Grid.Row         ="1"
+									Grid.Column      ="1"
+									HorizontalOptions="Center"
+									VerticalOptions  ="Center">
+								</Local:csmSwitch>
+							</Grid>
+						</Grid>
+						<!-- Grid Row = 5 Grid:Yes/No  BackgroundColor="#A1B3C8",#80C8A6-->
+						<Grid
+							Grid.Row       ="5"
+							Grid.Column    ="0"
+							BackgroundColor="White"
+							RowSpacing     ="0"
+							ColumnSpacing  ="10">
+							<Grid.RowDefinitions>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+							</Grid.ColumnDefinitions>
+							<Button
+								Grid.Row         ="0"
+								Grid.Column      ="0"
+								Image            ="btn_cancel"
+								BackgroundColor  ="Transparent"
+								HorizontalOptions="End"
+								VerticalOptions  ="Center"
+								BorderRadius     ="0"
+								BorderColor      ="Transparent"
+								BorderWidth      ="0">
+							</Button>
+							<Button
+								Grid.Row         ="0"
+								Grid.Column      ="1"
+								BackgroundColor  ="White"
+								HorizontalOptions="Start"
+								VerticalOptions  ="Center"
+								Image            ="btn_save"
+								BorderRadius     ="0"
+								BorderColor      ="Transparent"
+								BorderWidth      ="0">
+							</Button>
+						</Grid>
+					</Grid>
+				</RelativeLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.LoginPage"
+	BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}"
+	xmlns:local="clr-namespace:SportsBook;assembly=SportsBook">
+	<ContentPage.Content>
+		<RelativeLayout>
+			<!-- "#0c3851" -->
+			<StackLayout
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+				<StackLayout
+					WidthRequest="280"
+					HorizontalOptions="Center"
+					Margin="40,0,40,0"
+					VerticalOptions="CenterAndExpand">
+					<StackLayout
+						Orientation="Horizontal"
+						HeightRequest="40">
+						<Image
+							Source="icon_email.png"
+							Aspect="AspectFit"
+							HeightRequest="20"
+							VerticalOptions="CenterAndExpand" />
+						<local:MyEntry
+							x:Name="usernameEntry"
+							FontSize="16"
+							Margin="10,0,0,0"
+							PlaceholderColor="White"
+							VerticalOptions="CenterAndExpand"
+							HorizontalOptions="FillAndExpand"
+							BackgroundColor="Transparent"
+							Placeholder="E-mail address" />
+					</StackLayout>
+					<BoxView
+						HeightRequest="1"
+						HorizontalOptions="Fill"
+						BackgroundColor="White"
+						Opacity="0.2" />
+					<StackLayout
+						Margin="0,20,0,0"
+						Orientation="Horizontal"
+						HeightRequest="40">
+						<Image
+							Source="icon_pass.png"
+							Aspect="AspectFit"
+							VerticalOptions="CenterAndExpand"
+							HeightRequest="25" />
+						<local:MyEntry
+							x:Name="passwordEntry"
+							FontSize="14"
+							PlaceholderColor="White"
+							VerticalOptions="CenterAndExpand"
+							HorizontalOptions="FillAndExpand"
+							BackgroundColor="Transparent"
+							Margin="10,0,0,0"
+							Placeholder="********"
+							IsPassword="true" />
+					</StackLayout>
+					<BoxView
+						HeightRequest="1"
+						HorizontalOptions="Fill"
+						BackgroundColor="White"
+						Opacity="0.2" />
+					<Button
+						Text="LOGIN"
+						HeightRequest="40"
+						HorizontalOptions="Fill"
+						Margin="0,20,0,0"
+						BorderRadius="20"
+						BackgroundColor="#16A8D1"
+						FontAttributes="Bold"
+						TextColor="White"
+						Clicked="OnLoginButtonClicked" />
+					<Label
+						x:Name="messageLabel"
+						IsVisible="false" />
+				</StackLayout>
+				<StackLayout
+					HeightRequest="100"
+					BackgroundColor="#144d73"
+					VerticalOptions="End">
+					<Button
+						Text="CREATE AN ACCOUNT"
+						WidthRequest="280"
+						VerticalOptions="CenterAndExpand"
+						HorizontalOptions="Center"
+						BorderWidth="1"
+						BorderColor="White"
+						BorderRadius="5"
+						BackgroundColor="#245c80"
+						FontAttributes="Bold"
+						TextColor="White"
+						Clicked="OnCreateAccountButtonClicked" />
+				</StackLayout>
+			</StackLayout>
+			<ActivityIndicator
+				x:Name="indicator"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+ 				BackgroundColor="#30ffffff"
+				IsVisible="false"
+				IsRunning="true"
+
+				Color="White" />
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

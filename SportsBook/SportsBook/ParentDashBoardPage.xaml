@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage
+	BarBackgroundColor="#0C3851"
+	BarTextColor="White"
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.ParentDashBoardPage"
+	xmlns:Local="clr-namespace:SportsBook">
+
+
+
+	<NavigationPage  Icon="profile" BackgroundColor="#0C3851" BarBackgroundColor="#16A9D1" BarTextColor="#FFFFFF">
+		<x:Arguments NavigationPage.HasBackButton="true">
+			
+			<Local:ParentProfilePage/>
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage Icon="coach" BackgroundColor="#0C3851" BarBackgroundColor="#16A9D1" BarTextColor="#FFFFFF">
+		<x:Arguments>
+			<Local:CoachListPage/>
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage  Icon="payment" BackgroundColor="#0C3851" BarBackgroundColor="#16A9D1" BarTextColor="#FFFFFF">
+		<x:Arguments>
+			<Local:ParentPaymentPage/>
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage  Icon="settings"  BackgroundColor="#0C3851" BarBackgroundColor="#16A9D1" BarTextColor="#FFFFFF">
+		<x:Arguments>
+			<Local:ParentPrivacyPage/>
+		</x:Arguments>
+	</NavigationPage>
+
+
+</TabbedPage>

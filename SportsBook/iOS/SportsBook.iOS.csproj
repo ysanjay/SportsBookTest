@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{5088BCA6-9950-4AB0-9038-AA260C4B08B6}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SportsBook.iOS</RootNamespace>
+    <AssemblyName>SportsBook.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>33446</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>false</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.CarouselView">
+      <HintPath>..\packages\Xamarin.Forms.CarouselView.2.3.0-pre1\lib\Xamarin.iOS10\Xamarin.Forms.CarouselView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.CarouselView.iOS">
+      <HintPath>..\packages\Xamarin.Forms.CarouselView.2.3.0-pre1\lib\Xamarin.iOS10\Xamarin.Forms.CarouselView.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.CarouselView.Platform">
+      <HintPath>..\packages\Xamarin.Forms.CarouselView.2.3.0-pre1\lib\Xamarin.iOS10\Xamarin.Forms.CarouselView.Platform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportsBook\SportsBook.csproj">
+      <Project>{31E61249-604A-4E18-9131-5B0B49E8EA97}</Project>
+      <Name>SportsBook</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Splash -768-1024.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Splash -1536-2048.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Splash-640-960.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Splash-640-1136.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152-152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80-80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180-180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon copy120-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87-87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58-58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MyEntryRenderer.cs" />
+    <Compile Include="ImageCircleRenderer.cs" />
+    <Compile Include="csmSwitchRendere.cs" />
+    <Compile Include="CustomProgressBarRenderer1.cs" />
+    <Compile Include="BorderRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_done.png" />
+    <BundleResource Include="Resources\icon_email.png" />
+    <BundleResource Include="Resources\icon_envelope.png" />
+    <BundleResource Include="Resources\icon_pass.png" />
+    <BundleResource Include="Resources\icon_user.png" />
+    <BundleResource Include="Resources\add.png" />
+    <BundleResource Include="Resources\add%402x.png" />
+    <BundleResource Include="Resources\add%403x.png" />
+    <BundleResource Include="Resources\arrow_down.png" />
+    <BundleResource Include="Resources\arrow_down%402x.png" />
+    <BundleResource Include="Resources\arrow_down%403x.png" />
+    <BundleResource Include="Resources\arrow_up.png" />
+    <BundleResource Include="Resources\arrow_up%402x.png" />
+    <BundleResource Include="Resources\arrow_up%403x.png" />
+    <BundleResource Include="Resources\back_small.png" />
+    <BundleResource Include="Resources\back_small%402x.png" />
+    <BundleResource Include="Resources\back_small%403x.png" />
+    <BundleResource Include="Resources\back.png" />
+    <BundleResource Include="Resources\back%402x.png" />
+    <BundleResource Include="Resources\back%403x.png" />
+    <BundleResource Include="Resources\btn_cancel.png" />
+    <BundleResource Include="Resources\btn_cancel%402x.png" />
+    <BundleResource Include="Resources\btn_cancel%403x.png" />
+    <BundleResource Include="Resources\btn_save.png" />
+    <BundleResource Include="Resources\btn_save%402x.png" />
+    <BundleResource Include="Resources\btn_save%403x.png" />
+    <BundleResource Include="Resources\calendar.png" />
+    <BundleResource Include="Resources\calendar%402x.png" />
+    <BundleResource Include="Resources\calendar%403x.png" />
+    <BundleResource Include="Resources\check.png" />
+    <BundleResource Include="Resources\check%402x.png" />
+    <BundleResource Include="Resources\check%403x.png" />
+    <BundleResource Include="Resources\club_team_active.png" />
+    <BundleResource Include="Resources\club_team_active%402x.png" />
+    <BundleResource Include="Resources\club_team_active%403x.png" />
+    <BundleResource Include="Resources\club_team.png" />
+    <BundleResource Include="Resources\club_team%402x.png" />
+    <BundleResource Include="Resources\club_team%403x.png" />
+    <BundleResource Include="Resources\coach_active.png" />
+    <BundleResource Include="Resources\coach_active%402x.png" />
+    <BundleResource Include="Resources\coach_active%403x.png" />
+    <BundleResource Include="Resources\coach.png" />
+    <BundleResource Include="Resources\coach%402x.png" />
+    <BundleResource Include="Resources\coach%403x.png" />
+    <BundleResource Include="Resources\controls.png" />
+    <BundleResource Include="Resources\controls%402x.png" />
+    <BundleResource Include="Resources\controls%403x.png" />
+    <BundleResource Include="Resources\dropdown_arrow.png" />
+    <BundleResource Include="Resources\dropdown_arrow%402x.png" />
+    <BundleResource Include="Resources\dropdown_arrow%403x.png" />
+    <BundleResource Include="Resources\email.png" />
+    <BundleResource Include="Resources\email%402x.png" />
+    <BundleResource Include="Resources\email%403x.png" />
+    <BundleResource Include="Resources\event.png" />
+    <BundleResource Include="Resources\event%402x.png" />
+    <BundleResource Include="Resources\event%403x.png" />
+    <BundleResource Include="Resources\icon_booknow.png" />
+    <BundleResource Include="Resources\icon_booknow%402x.png" />
+    <BundleResource Include="Resources\icon_booknow%403x.png" />
+    <BundleResource Include="Resources\marker_blue.png" />
+    <BundleResource Include="Resources\marker_blue%402x.png" />
+    <BundleResource Include="Resources\marker_blue%403x.png" />
+    <BundleResource Include="Resources\marker.png" />
+    <BundleResource Include="Resources\marker%402x.png" />
+    <BundleResource Include="Resources\marker%403x.png" />
+    <BundleResource Include="Resources\menu.png" />
+    <BundleResource Include="Resources\menu%402x.png" />
+    <BundleResource Include="Resources\menu%403x.png" />
+    <BundleResource Include="Resources\Next.png" />
+    <BundleResource Include="Resources\Next%402x.png" />
+    <BundleResource Include="Resources\Next%403x.png" />
+    <BundleResource Include="Resources\notification.png" />
+    <BundleResource Include="Resources\notification%402x.png" />
+    <BundleResource Include="Resources\notification%403x.png" />
+    <BundleResource Include="Resources\payment_active.png" />
+    <BundleResource Include="Resources\payment_active%402x.png" />
+    <BundleResource Include="Resources\payment_active%403x.png" />
+    <BundleResource Include="Resources\payment.png" />
+    <BundleResource Include="Resources\payment%402x.png" />
+    <BundleResource Include="Resources\payment%403x.png" />
+    <BundleResource Include="Resources\Previous.png" />
+    <BundleResource Include="Resources\Previous%402x.png" />
+    <BundleResource Include="Resources\Previous%403x.png" />
+    <BundleResource Include="Resources\profile_active.png" />
+    <BundleResource Include="Resources\profile_active%402x.png" />
+    <BundleResource Include="Resources\profile_active%403x.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\profile%402x.png" />
+    <BundleResource Include="Resources\profile%403x.png" />
+    <BundleResource Include="Resources\radio_checked.png" />
+    <BundleResource Include="Resources\radio_checked%402x.png" />
+    <BundleResource Include="Resources\radio_checked%403x.png" />
+    <BundleResource Include="Resources\radio.png" />
+    <BundleResource Include="Resources\radio%402x.png" />
+    <BundleResource Include="Resources\radio%403x.png" />
+    <BundleResource Include="Resources\search.png" />
+    <BundleResource Include="Resources\search%402x.png" />
+    <BundleResource Include="Resources\search%403x.png" />
+    <BundleResource Include="Resources\settings_active.png" />
+    <BundleResource Include="Resources\settings_active%402x.png" />
+    <BundleResource Include="Resources\settings_active%403x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings%402x.png" />
+    <BundleResource Include="Resources\settings%403x.png" />
+    <BundleResource Include="Resources\toggle_no.png" />
+    <BundleResource Include="Resources\toggle_no%402x.png" />
+    <BundleResource Include="Resources\toggle_no%403x.png" />
+    <BundleResource Include="Resources\toggle_yes.png" />
+    <BundleResource Include="Resources\toggle_yes%402x.png" />
+    <BundleResource Include="Resources\toggle_yes%403x.png" />
+    <BundleResource Include="Resources\viewmore.png" />
+    <BundleResource Include="Resources\viewmore%402x.png" />
+    <BundleResource Include="Resources\viewmore%403x.png" />
+    <BundleResource Include="Resources\star_disable.png" />
+    <BundleResource Include="Resources\star_disable%402x.png" />
+    <BundleResource Include="Resources\star_disable%403x.png" />
+    <BundleResource Include="Resources\star_green_sml.png" />
+    <BundleResource Include="Resources\star_green_sml%402x.png" />
+    <BundleResource Include="Resources\star_green_sml%403x.png" />
+    <BundleResource Include="Resources\star_grey.png" />
+    <BundleResource Include="Resources\star_grey%402x.png" />
+    <BundleResource Include="Resources\star_grey%403x.png" />
+    <BundleResource Include="Resources\star.png" />
+    <BundleResource Include="Resources\star%402x.png" />
+    <BundleResource Include="Resources\star%403x.png" />
+    <BundleResource Include="Resources\people.png" />
+    <BundleResource Include="mastercard.png" />
+    <BundleResource Include="paypal.png" />
+    <BundleResource Include="visa.png" />
+    <BundleResource Include="Resources\blue_circle.png" />
+    <BundleResource Include="Resources\circle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

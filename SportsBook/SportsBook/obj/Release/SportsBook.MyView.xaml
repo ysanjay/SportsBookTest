@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.MyView"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook">
+	<ContentView.Content>
+		<StackLayout
+			VerticalOptions="Center"
+			Margin="20,10,20,0"
+			Grid.Row="0"
+			Grid.Column="1"
+			HorizontalOptions="Fill"
+			BackgroundColor="Transparent">
+			<StackLayout
+				Orientation="Horizontal">
+				<Label
+					x:Name="textCategory"
+					FontSize="12"
+					HorizontalTextAlignment="Start"
+					TextColor="White"
+					Text="testingData" />
+				<Label
+					x:Name="textProgress"
+					HorizontalOptions="EndAndExpand"
+					FontSize="12"
+					HorizontalTextAlignment="End"
+					TextColor="#62AAD2"
+					Text="95%" />
+			</StackLayout>
+			<Grid
+				ColumnSpacing="2"
+				HorizontalOptions="Fill"
+				VerticalOptions="Center">
+				<Grid.RowDefinitions>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition
+						Width="*">
+					</ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Local:csmProgressBar
+					x:Name="progressBar1"
+					BarColor="#C66A69"
+					Progress="0"
+					Grid.Row="0"
+					Grid.Column="0" />
+				<Local:csmProgressBar
+					x:Name="progressBar2"
+					BarColor="#D79C70"
+					Progress="0"
+					Grid.Row="0"
+					Grid.Column="1" />
+				<Local:csmProgressBar
+					x:Name="progressBar3"
+					BarColor="#E6C684"
+					Progress="0"
+					Grid.Row="0"
+					Grid.Column="2" />
+				<Local:csmProgressBar
+					x:Name="progressBar4"
+					BarColor="#BBD48D"
+					Progress="0"
+					Grid.Row="0"
+					Grid.Column="3" />
+				<Local:csmProgressBar
+					x:Name="progressBar5"
+					BarColor="#9BD18B"
+					Progress="0"
+					Grid.Row="0"
+					Grid.Column="4" />
+			</Grid>
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

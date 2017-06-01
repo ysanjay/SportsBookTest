@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.CoachUpComingEventsPage"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook"
+	Title="April">
+	<ContentPage.Content>
+		<ScrollView
+			BackgroundColor="#0C3851">
+		<Grid
+				BackgroundColor="Transparent"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RowSpacing="0">
+
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="340"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+				<!-- Calendar -->
+				<ScrollView
+					Grid.Row="0"
+					Grid.Column="0"
+					BackgroundColor="#3A6085">
+					<Local:ToolCalendar
+						x:Name="varToolCalendar">
+					</Local:ToolCalendar>
+				</ScrollView>
+				<!-- Time -->
+				
+				<Grid
+					Grid.Row="1"
+					Grid.Column="0"
+					BackgroundColor="Transparent"
+					VerticalOptions="Start"
+					Margin="10">
+
+					<Grid
+						Grid.Row="0"
+						Grid.Column="0"
+						BackgroundColor="Transparent"
+						VerticalOptions="Start">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+							<Grid Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent">
+								<Grid.RowDefinitions></Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="20"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<Image Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" Source="event" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30"/>
+								<Label Grid.Row="0" Grid.Column="1" Text="10th Annual Summer Basketball Camp" TextColor="#FFFFFF" FontSize="15" FontAttributes="Bold" VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+								<Image Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" Source="marker" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30"/>
+								<Label Grid.Row="1" Grid.Column="1" Text="Misson San Jose High School, California - USA" TextColor="#8BA4AF" FontSize="12" FontAttributes="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+							</Grid>
+					</Grid>
+
+					<Grid
+						Grid.Row="1"
+						Grid.Column="0"
+						BackgroundColor="Transparent"
+						VerticalOptions="Start">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+							<Grid Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" Margin="5,0,5,0" RowSpacing="0">
+								<Grid.RowDefinitions>
+								<RowDefinition Height="30"/>
+								<RowDefinition Height="15"/>
+								<RowDefinition Height="30"/>
+								<RowDefinition Height="20"/>
+								<RowDefinition Height="*"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+								<Label Grid.Row="0" Grid.Column="0" Text="EVENT DATE" TextColor="#A4CFB5" FontAttributes="Bold" FontSize="12"  VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="1" Grid.Column="0" Text="START" TextColor="#8BA4AF" FontSize="11"  VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="1" Grid.Column="1" Text="END" TextColor="#8BA4AF" FontSize="11"  VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="2" Grid.Column="0" Text="April 3 Mon" TextColor="#FFFFFF" FontSize="15"  VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="2" Grid.Column="1" Text="April 5 Wen" TextColor="#FFFFFF" FontSize="15"  VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="3" Grid.Column="0" Text="9:00 AM - 3:00 PM" TextColor="#67B6D8" FontSize="12"  VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+								<Label Grid.Row="3" Grid.Column="1" Text="9:00 AM - 3:00 PM" TextColor="#67B6D8" FontSize="12"  VerticalTextAlignment="Start" HorizontalTextAlignment="Start"></Label>
+
+							</Grid>
+					</Grid>
+					
+					<!-- Book Now Button -->
+
+					<Grid
+						Grid.Row="2"
+						Grid.Column="0"
+						BackgroundColor="Transparent"
+						VerticalOptions="Start"
+						Margin="0,20,0,0">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+
+						<Button
+							Grid.Row="0"
+							Grid.Column="0"
+							Text="BOOK NOW"
+							TextColor="#FFFFFF"
+							FontAttributes="Bold"
+							FontSize="14"
+							BorderRadius="6"
+							BackgroundColor="#67B6D8"
+							WidthRequest="280"
+							HorizontalOptions="Center">
+						</Button>
+						
+					</Grid>
+					
+				</Grid>
+
+
+				
+		</Grid>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

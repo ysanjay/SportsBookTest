@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns         ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class        ="SportsBook.RegisterPage"
+	xmlns:local    ="clr-namespace:SportsBook;assembly=SportsBook"
+	BackgroundColor="#094964"
+	Title          ="Register">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Padding    ="30,30,30,0"
+				Orientation="Vertical">
+				<!-- profile image -->
+				<Grid
+					BackgroundColor  ="Transparent"
+					WidthRequest     ="100"
+					HeightRequest    ="100"
+					HorizontalOptions="Center">
+					<Grid.RowDefinitions>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+					</Grid.ColumnDefinitions>
+					<local:ImageCircle
+						VerticalOptions  ="Center"
+						Grid.Row         ="0"
+						Grid.Column      ="0"
+						HeightRequest    ="80"
+						WidthRequest     ="80"
+						Aspect           ="AspectFit"
+						HorizontalOptions="Center"
+						Source           ="people"
+						BackgroundColor  ="Transparent" />
+					<Button
+						Grid.Row         ="0"
+						Grid.Column      ="0"
+						BorderRadius     ="20"
+						BackgroundColor  ="Transparent"
+						HorizontalOptions="End"
+						VerticalOptions  ="End"
+						HeightRequest    ="40"
+						WidthRequest     ="40"
+						Image            ="add.png" />
+				</Grid>
+				<!-- firstname  and lastname layout-->
+				<StackLayout
+					Spacing        ="40"
+					Margin         ="0,20,0,0"
+					Orientation    ="Horizontal"
+					BackgroundColor="Transparent">
+					<StackLayout
+						HorizontalOptions="FillAndExpand"
+						Orientation      ="Vertical"
+						BackgroundColor  ="Transparent">
+						<Label
+							Text                   ="FIRST NAME"
+							TextColor              ="#768FA3"
+							HorizontalTextAlignment="Start"
+							FontSize               ="12"
+							FontAttributes         ="Bold" />
+						<local:MyEntry
+							Text           =""
+							HeightRequest  ="20"
+							FontSize       ="16"
+							Keyboard       ="Text"
+							BackgroundColor="Transparent">
+						</local:MyEntry>
+						<BoxView
+							BackgroundColor="#156087"
+							HeightRequest  ="1" />
+					</StackLayout>
+					<!-- Lastname entry content -->
+					<StackLayout
+						HorizontalOptions="FillAndExpand"
+						Orientation      ="Vertical"
+						Padding          ="10,2,0,0"
+						BackgroundColor  ="Transparent">
+						<Label
+							Text                   ="LAST NAME"
+							TextColor              ="#768FA3"
+							HorizontalTextAlignment="Start"
+							FontSize               ="12"
+							FontAttributes         ="Bold" />
+						<local:MyEntry
+							Text           =""
+							HeightRequest  ="20"
+							FontSize       ="16"
+							BackgroundColor="Transparent"
+							Keyboard       ="Text">
+						</local:MyEntry>
+						<BoxView
+							BackgroundColor="#156087"
+							HeightRequest  ="1" />
+					</StackLayout>
+				</StackLayout>
+				<!-- eamil entry for design-->
+				<StackLayout
+					Margin     ="0,20,0,0"
+					Orientation="Vertical">
+					<Label
+						Text                   ="EMAIL ADDRESS"
+						TextColor              ="#768FA3"
+						HorizontalTextAlignment="Start"
+						FontSize               ="12"
+						FontAttributes         ="Bold" />
+					<local:MyEntry
+						Text           =""
+						FontSize       ="14"
+						HeightRequest  ="20"
+						BackgroundColor="Transparent"
+						WidthRequest   ="50"
+						Keyboard       ="Email">
+					</local:MyEntry>
+					<BoxView
+						BackgroundColor="#156087"
+						HeightRequest  ="1" />
+					<Label
+						Margin                 ="0,20,0,0"
+						Text                   ="CONTACT NUMBER"
+						TextColor              ="#768FA3"
+						HorizontalTextAlignment="Start"
+						FontSize               ="12"
+						FontAttributes         ="Bold" />
+					<local:MyEntry
+						Text           =""
+						HeightRequest  ="20"
+						BackgroundColor="Transparent"
+						WidthRequest   ="200"
+						FontSize       ="14"
+						Keyboard       ="Telephone">
+					</local:MyEntry>
+					<BoxView
+						BackgroundColor="#156087"
+						HeightRequest  ="1" />
+					<Label
+						Margin                 ="0,20,0,0"
+						Text                   ="ADDRESS"
+						TextColor              ="#768FA3"
+						HorizontalTextAlignment="Start"
+						FontSize               ="12"
+						FontAttributes         ="Bold" />
+					<local:MyEntry
+						Keyboard       ="Text"
+						HeightRequest  ="20"
+						BackgroundColor="Transparent"
+						WidthRequest   ="200"
+						FontSize       ="14">
+					</local:MyEntry>
+					<BoxView
+						BackgroundColor="#156087"
+						HeightRequest  ="1" />
+				</StackLayout>
+				<!-- Design for Button -->
+				<Button
+					Margin           ="0,40,0,0"
+					Text             ="REGISTER"
+					TextColor        ="White"
+					BackgroundColor  ="#03B7DA"
+					HeightRequest    ="50"
+					BorderRadius     ="25"
+					FontAttributes   ="Bold"
+					HorizontalOptions="Center"
+					WidthRequest     ="260"
+					Clicked          ="register_Clicked" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

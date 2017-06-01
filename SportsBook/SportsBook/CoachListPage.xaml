@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns     ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x    ="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class    ="SportsBook.CoachListPage"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook"
+	Title      ="Coaches">
+	<ContentPage.Content>
+		<StackLayout
+			Orientation    ="Vertical"
+			BackgroundColor="Transparent"
+			Spacing        ="0">
+
+			<StackLayout
+				BackgroundColor="#156587"
+				VerticalOptions="Start"
+				Orientation    ="Horizontal"
+				HeightRequest  ="45"
+				Padding="4,4,4,4">
+
+
+				<Label
+					Text                   ="Sport1"
+					TextColor              ="White"
+					HorizontalOptions      ="Start"
+					FontSize               ="14"
+					FontAttributes         ="Bold"
+					HorizontalTextAlignment="Start"
+					VerticalTextAlignment  ="Center"
+					BackgroundColor="Transparent"/>
+
+				<StackLayout
+					BackgroundColor="Transparent"
+					HorizontalOptions="EndAndExpand"
+					Orientation="Horizontal">
+
+					<Label
+						Text                   ="Search for"
+						TextColor              ="White"
+						HorizontalOptions      ="Start"
+						WidthRequest           ="80"
+						FontSize               ="14"
+						FontAttributes         ="Bold"
+						HorizontalTextAlignment="Start"
+						VerticalTextAlignment  ="Center" />
+						<StackLayout
+							Orientation="Horizontal"
+							Padding="5,5,5,5"
+							BackgroundColor="#136D99">
+							<Local:MyEntry
+							Placeholder            ="Football"
+							HorizontalTextAlignment="Start"
+							BackgroundColor        ="Transparent"
+							WidthRequest           ="150"
+							TextColor              ="White"
+							FontSize               ="14"
+							PlaceholderColor       ="#06A0C6">
+						</Local:MyEntry>
+						<Image
+							Source       ="search.png"
+							Aspect="AspectFit"
+							WidthRequest ="40" 
+							VerticalOptions="Center"/>
+						</StackLayout>
+					
+				</StackLayout>
+			</StackLayout>
+			<ListView
+				BackgroundColor="Transparent"
+				x:Name         ="listView"
+				RowHeight      ="120"
+
+				SeparatorVisibility="Default"
+				ItemSelected   ="Handle_ItemSelected_Coach"
+				SeparatorColor ="#156087">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							
+							<StackLayout
+								Padding="10"
+ 								Orientation    ="Horizontal">
+								<Grid
+									BackgroundColor="Transparent">
+									<Grid.RowDefinitions>
+										<RowDefinition
+											Height="70" />
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition
+											Width="70" />
+									</Grid.ColumnDefinitions>
+									 
+									<Local:ImageCircle
+										Grid.Row       ="0"
+										Grid.Column    ="0"
+										Source         ="{Binding Image}"
+										Margin         ="5"
+										Aspect         ="AspectFit"
+										VerticalOptions="Center"
+										WidthRequest   ="65"
+										HeightRequest  ="65"
+										BackgroundColor="Transparent">
+									</Local:ImageCircle>
+								</Grid>
+								<StackLayout
+									Orientation="Vertical"
+									Margin     ="10,5,0,0">
+									<StackLayout
+										Orientation="Horizontal">
+										<Label
+											Text          ="{Binding Name}"
+											FontAttributes="Bold"
+											TextColor     ="White"
+											FontSize      ="16" />
+										<Image
+											Source="{Binding Star1}" />
+										<Image
+											Source="{Binding Star2}" />
+										<Image
+											Source="{Binding Star3}" />
+										<Image
+											Source="{Binding Star4}" />
+										<Image
+											Source="{Binding Star5}" />
+									</StackLayout>
+									<Label
+										Text          ="{Binding experience}"
+										TextColor     ="#80A6B1"
+										FontSize      ="12"
+										FontAttributes="Bold" />
+									<StackLayout
+										Margin="0,5,0,0"
+										HeightRequest="40"
+										VerticalOptions="Center"
+ 										Orientation="Horizontal">
+										<Button
+											BackgroundColor="#03B7DA"
+ 											Text           ="{Binding message}"
+											WidthRequest   ="130"
+ 											BorderRadius   ="20"
+  											TextColor      ="White"
+											FontAttributes ="Bold"
+											FontSize       ="12"
+											 />
+										<Button
+											BackgroundColor="#90D0B5"
+ 											Text           ="{Binding details}"
+											WidthRequest   ="130"
+											BorderRadius   ="20"
+											TextColor      ="White"
+											FontAttributes ="Bold"
+											FontSize       ="12"
+											  />
+									</StackLayout>
+
+								</StackLayout>
+								
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

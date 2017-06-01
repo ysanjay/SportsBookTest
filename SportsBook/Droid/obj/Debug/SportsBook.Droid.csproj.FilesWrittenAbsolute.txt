@@ -1,0 +1,172 @@
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/MonoAndroid,Version=v7.1.AssemblyAttribute.cs
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/SportsBook.Droid.pdb
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/SportsBook.Droid.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/com.companyname.sportsbook.apk
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/android/bin/com.companyname.sportsbook.apk
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/layout/tabbar.xml
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/layout/toolbar.xml
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/values/styles.xml
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable-hdpi/icon.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/people.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_done.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_email.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_envelope.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_pass.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_user.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/add.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/arrow_down.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/arrow_up.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/back_small.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/back.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/btn_cancel.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/btn_save.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/calendar.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/check.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/club_team_active.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/club_team.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/coach_active.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/coach.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/controls.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/dropdown_arrow.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/email.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/event.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/icon_booknow.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/marker_blue.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/marker.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/menu.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/next.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/notification.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/payment_active.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/payment.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/previous.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/profile_active.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/profile.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/radio_checked.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/radio.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/search.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/settings_active.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/settings.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/toggle_no.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/toggle_yes.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/viewmore.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/star_disable.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/star_green_sml.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/star_grey.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/star.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/mastercard.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/paypal.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/visa.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/R.cs.flag
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/com.companyname.sportsbook-Signed.apk
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/uploadflags.txt
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/SportsBook.Droid.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/SportsBook.Droid.pdb
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/FormsViewGroup.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.Core.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.Android.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.Platform.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/SportsBook.dll
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/bin/Debug/SportsBook.pdb
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/blue_circle.png
+/Users/CS04-MAC/Desktop/Projects/mar22/SportsBook/Droid/obj/Debug/res/drawable/circle.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/MonoAndroid,Version=v6.0.AssemblyAttribute.cs
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/SportsBook.Droid.pdb
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/SportsBook.Droid.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/com.companyname.sportsbook.apk
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/android/bin/com.companyname.sportsbook.apk
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/layout/tabbar.xml
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/layout/toolbar.xml
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/values/styles.xml
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable-hdpi/icon.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/people.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_done.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_email.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_envelope.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_pass.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_user.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/add.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/arrow_down.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/arrow_up.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/back_small.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/back.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/btn_cancel.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/btn_save.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/calendar.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/check.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/club_team_active.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/club_team.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/coach_active.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/coach.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/controls.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/dropdown_arrow.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/email.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/event.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/icon_booknow.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/marker_blue.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/marker.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/menu.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/next.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/notification.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/payment_active.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/payment.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/previous.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/profile_active.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/profile.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/radio_checked.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/radio.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/search.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/settings_active.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/settings.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/toggle_no.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/toggle_yes.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/viewmore.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/star_disable.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/star_green_sml.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/star_grey.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/star.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/mastercard.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/paypal.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/visa.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/blue_circle.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/res/drawable/circle.png
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/R.cs.flag
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/com.companyname.sportsbook-Signed.apk
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/uploadflags.txt
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/SportsBook.Droid.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/obj/Debug/SportsBook.Droid.pdb
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/FormsViewGroup.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.Core.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.Android.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/Xamarin.Forms.CarouselView.Platform.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/SportsBook.dll
+/Users/aashit/Desktop/ Xamarin/SportsBook/Project/SportsBook V2/SportsBook/Droid/bin/Debug/SportsBook.pdb

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns     ="http://xamarin.com/schemas/2014/forms"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook"
+	xmlns:x    ="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class    ="SportsBook.ParentPaymentPage"
+	Title="Payment">
+	<ContentPage.Content>
+		<RelativeLayout
+			BackgroundColor="#144D74">
+			<BoxView
+				BackgroundColor               ="#16A9D1"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				HeightRequest                 ="60">
+			</BoxView>
+			<ScrollView
+				BackgroundColor                ="Transparent"
+				Margin                         ="0"
+				RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+				<StackLayout
+					BackgroundColor                ="Transparent"
+					Margin                         ="5"
+					RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+					RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+					<RelativeLayout
+						BackgroundColor="Transparent"
+						Margin         ="10">
+						<Frame
+							HasShadow                      ="false"
+							BackgroundColor                ="#144D74"
+							RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+							RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+						</Frame>
+						<RelativeLayout
+							HorizontalOptions="FillAndExpand"
+							BackgroundColor  ="Transparent">
+							<Frame
+								x:Name                        ="refFrame"
+								HasShadow                     ="false"
+								BackgroundColor               ="#FFFFFF"
+								HeightRequest                 ="155"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+								<StackLayout
+									BackgroundColor                ="Transparent"
+									Padding                        ="0,10,0,20"
+									RelativeLayout.WidthConstraint ="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=Width}"
+									RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=refFrame, Property=Height}">
+									<Label
+										Text                   ="$145.00"
+										FontSize               ="30"
+										HorizontalTextAlignment="Center"
+										TextColor              ="#15A7D1">
+									</Label>
+									<Label
+										Text             ="CHOOSE YOUR PAYMENT METHOD"
+										FontSize         ="12"
+										TextColor        ="Gray"
+										HorizontalOptions="Center">
+									</Label>
+									<StackLayout
+										HorizontalOptions="Center"
+										Orientation      ="Horizontal">
+										<RelativeLayout>
+											<Image
+												Source         ="visa.png"
+												Margin         ="10"
+												HeightRequest  ="60"
+												WidthRequest   ="80"
+												BackgroundColor="Transparent">
+											</Image>
+											<Image
+												RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y ,Factor=1, Constant=80}"
+												HeightRequest             ="20"
+												WidthRequest              ="20"
+												BackgroundColor           ="Fuchsia"
+												IsVisible                 ="false">
+											</Image>
+										</RelativeLayout>
+										<RelativeLayout>
+											<Image
+												Source         ="paypal.png"
+												Margin         ="10"
+												HeightRequest  ="60"
+												WidthRequest   ="80"
+												BackgroundColor="Transparent">
+											</Image>
+											<Image
+												RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y ,Factor=1, Constant=80}"
+												HeightRequest             ="20"
+												WidthRequest              ="20"
+												IsVisible                 ="false"
+												BackgroundColor           ="Fuchsia">
+											</Image>
+										</RelativeLayout>
+										<RelativeLayout>
+											<Image
+												Source         ="mastercard.png"
+												Margin         ="10"
+												HeightRequest  ="60"
+												WidthRequest   ="80"
+												BackgroundColor="Transparent">
+											</Image>
+											<Image
+												RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y ,Factor=1, Constant=80}"
+												HeightRequest             ="20"
+												WidthRequest              ="20"
+												BackgroundColor           ="Fuchsia"
+												IsVisible                 ="false">
+											</Image>
+										</RelativeLayout>
+									</StackLayout>
+								</StackLayout>
+							</Frame>
+							<StackLayout
+ 								Padding="20"
+								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+								Margin                        ="0,190,0,0"
+								BackgroundColor               ="#1b6185">
+								<Label
+									Text     ="CARD NUMBER"
+									FontSize ="12"
+									TextColor="#9ac4cc">
+								</Label>
+								<Local:MyEntry
+									BackgroundColor="#3980a5"
+									TextColor      ="White">
+								</Local:MyEntry>
+								<StackLayout
+																			Margin="0,20,0,0"
+
+									Orientation="Horizontal">
+									<StackLayout
+										HorizontalOptions="FillAndExpand"
+										Orientation      ="Vertical">
+										<Label
+											HorizontalOptions      ="FillAndExpand"
+											HorizontalTextAlignment="Start"
+											Text                   ="EXPIRATION DATE"
+											FontSize               ="12"
+											TextColor              ="#9ac4cc">
+										</Label>
+										<Local:MyEntry
+											TextColor        ="White"
+											HorizontalOptions="FillAndExpand"
+											BackgroundColor  ="#3980a5">
+										</Local:MyEntry>
+									</StackLayout>
+									<StackLayout
+										HorizontalOptions="FillAndExpand"
+										Orientation      ="Vertical">
+										<Label
+											HorizontalOptions      ="FillAndExpand"
+											HorizontalTextAlignment="Start"
+											Text                   ="CVV"
+											FontSize               ="12"
+											TextColor              ="#9ac4cc">
+										</Label>
+										<Local:MyEntry
+											TextColor        ="White"
+											HorizontalOptions="FillAndExpand"
+											BackgroundColor  ="#3980a5">
+										</Local:MyEntry>
+									</StackLayout>
+								</StackLayout>
+								<Label
+									Margin="0,20,0,0"
+									Text     ="CARD HOLDERS NAME"
+									FontSize ="12"
+									TextColor="#9ac4cc">
+								</Label>
+								<Local:MyEntry
+									TextColor      ="White"
+									BackgroundColor="#3980a5">
+								</Local:MyEntry>
+								<Button
+									Margin="0,30,0,0"
+									Text           ="PAY NOW"
+									TextColor      ="White"
+									FontSize       ="14"
+									BackgroundColor="#92cfb5">
+								</Button>
+							</StackLayout>
+						</RelativeLayout>
+					</RelativeLayout>
+				</StackLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

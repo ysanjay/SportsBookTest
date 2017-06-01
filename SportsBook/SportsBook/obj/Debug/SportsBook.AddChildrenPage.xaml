@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.AddChildrenPage"
+	xmlns:local="clr-namespace:SportsBook;assembly=SportsBook"
+	BackgroundColor="#094964">
+	<ContentPage.Content>
+	<ScrollView>
+		<!-- background layout-->
+		<StackLayout 
+				Orientation="Vertical" 
+				BackgroundColor="Transparent"
+				Spacing="10"
+				Padding="40">
+				<Grid
+				HorizontalOptions="CenterAndExpand">
+				<Grid.RowDefinitions>
+					<RowDefinition
+						Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition
+						Width="Auto" />
+				</Grid.ColumnDefinitions>
+				<Button
+					Grid.Row="0"
+					Grid.Column="0"
+					BorderRadius="40"
+					HeightRequest="80"
+					WidthRequest="80"
+					Image="icon_user"
+					BackgroundColor="#3580A7"
+					HorizontalOptions="Center" />
+				<Button
+					Grid.Row="0"
+					Grid.Column="0"
+					BorderRadius="15"
+					HeightRequest="30"
+					WidthRequest="30"
+					Image="add.png"
+					HorizontalOptions="End"
+					VerticalOptions="End"
+					BackgroundColor="White" />
+				
+			</Grid>
+			<StackLayout
+					Padding="0,10,0,0"
+					Orientation="Horizontal"
+					BackgroundColor="Transparent"
+					Spacing="20">
+					<StackLayout
+						Orientation    ="Vertical"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="Transparent">
+						<Label
+							Text                   ="FIRST NAME"
+							TextColor              ="#768FA3"
+                            FontSize="12"
+							FontAttributes         ="Bold"/>
+							<local:MyEntry
+								Text           =""
+                                FontSize="16"
+								Keyboard="Text"
+								BackgroundColor="Transparent">
+							</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"	/>
+					</StackLayout>
+					<StackLayout
+						Orientation    ="Vertical"
+						HorizontalOptions="FillAndExpand"
+						BackgroundColor="Transparent">
+						<Label
+							Text                   ="LAST NAME"
+							TextColor              ="#768FA3"
+                            FontSize="12"
+							FontAttributes         ="Bold"/>
+							<local:MyEntry
+								Text           =""
+                                FontSize="16"
+								Keyboard="Text"
+								BackgroundColor="Transparent">
+							</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+
+						HeightRequest="1"/>
+					</StackLayout>
+				
+				</StackLayout>
+				<Label
+								Text                   ="EMAIL ADDRESS"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold" />
+						<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Email">
+					</local:MyEntry>
+							<BoxView
+							BackgroundColor="#156087"
+							HeightRequest="1"
+							/>
+							<Label
+								Text                   ="CONTACT NUMBER"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold"
+								 />
+							<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Telephone">
+						</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"
+						/>
+					<Label
+								Text                   ="DATE OF BIRTH"
+								TextColor              ="#768FA3"
+								FontSize="12"
+								FontAttributes         ="Bold"
+								/>
+							<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Numeric">
+						</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>
+				<Label
+								Text                   ="SCHOOL"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold" />
+							<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Text"
+									>
+						</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>
+						<Label
+								Text                   ="HEIGHT"
+								TextColor              ="#768FA3"
+								FontSize="12"
+								FontAttributes         ="Bold"
+								/>
+						<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Numeric"
+									>
+						</local:MyEntry>
+					<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"
+						/>
+						<Label
+								Text                   ="WEIGHT"
+								TextColor              ="#768FA3"
+				                FontSize="12"
+								FontAttributes         ="Bold"
+								 />
+						<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+			   						Keyboard="Numeric"
+									>
+						</local:MyEntry>
+					<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"
+						/>
+						<Label
+								Text                   ="TAGS"
+								TextColor              ="#768FA3"
+				                FontSize="12"
+								FontAttributes         ="Bold"
+								 />
+							<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Text">
+								</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"
+						/>
+				<Label
+								Text                   ="SELECT SPORTS"
+								TextColor              ="#768FA3"
+				                FontSize="12"
+								FontAttributes         ="Bold"				 />
+				
+					      <Frame
+							BackgroundColor  ="Transparent"
+							HorizontalOptions="Fill" 
+							Padding="0,15,0,0">
+                                <Picker
+								Title            ="select"
+								HorizontalOptions="StartAndExpand"
+								HeightRequest    ="1"
+								BackgroundColor  ="Transparent"
+								TextColor        ="White">
+                                    <Picker.Items>
+                                        <x:String>
+                                            Cricket
+                                        </x:String>
+                                        <x:String>
+                                            VolleyBall
+                                        </x:String>
+                                        <x:String>
+                                            Football
+                                        </x:String>
+                                        <x:String>
+                                            BasketBall
+                                        </x:String>
+                                        <x:String>
+                                            BadMinton
+                                        </x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </Frame>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>
+				<Label
+								Text                   ="SELECT SPECIALIZATION"
+								TextColor              ="#768FA3"
+								FontSize="12"
+								FontAttributes         ="Bold" />
+					      <Frame
+							BackgroundColor  ="Transparent"
+							Padding="0,15,0,0">
+                                <Picker
+								Title            ="select"
+								HeightRequest    ="1"
+								BackgroundColor  ="Transparent"
+								TextColor        ="White">
+                                    <Picker.Items>
+                                        <x:String>
+                                            Cricket
+                                        </x:String>
+                                        <x:String>
+                                            VolleyBall
+                                        </x:String>
+                                        <x:String>
+                                            Football
+                                        </x:String>
+                                        <x:String>
+                                            BasketBall
+                                        </x:String>
+                                        <x:String>
+                                            BadMinton
+                                        </x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </Frame>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>
+								<Label
+								Text                   ="SELECT FOCUS POINTS"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold"/>
+					      <Frame
+							BackgroundColor  ="Transparent"
+							Padding="0,15,0,0">
+                                <Picker
+								Title            ="select"
+								HeightRequest    ="1"
+                                BackgroundColor  ="Transparent"
+								TextColor        ="White">
+                                    <Picker.Items>
+                                        <x:String>
+                                            100
+                                        </x:String>
+                                        <x:String>
+                                         200
+                                        </x:String>
+                                        <x:String>
+                                           300
+                                        </x:String>
+                                        <x:String>
+                                        400
+                                        </x:String>
+                                        <x:String>
+                                           500
+                                        </x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </Frame>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"	/>
+							<Label
+								Text                   ="CLUB TEAM"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold"/>
+						<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Text">
+								</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>
+				<Label
+								Text                   ="TEAM COACH"
+								TextColor              ="#768FA3"
+                                FontSize="12"
+								FontAttributes         ="Bold"/>
+							<local:MyEntry
+									Text           =""
+                                    FontSize="14"
+									BackgroundColor="Transparent"
+									Keyboard="Text">
+						</local:MyEntry>
+						<BoxView
+						BackgroundColor="#156087"
+						HeightRequest="1"/>    
+				 <Button
+							Text           ="SAVE"
+							TextColor      ="White"
+							BackgroundColor="#90D0B5"
+							HeightRequest  ="40"
+							WidthRequest   ="200"
+							BorderRadius   ="20"
+							FontAttributes ="Bold"
+							Clicked        ="child2_Clicked" />
+		
+				</StackLayout>
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
+

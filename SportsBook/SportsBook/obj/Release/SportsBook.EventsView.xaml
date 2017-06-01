@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook"
+	x:Class="SportsBook.EventsView">
+	<ContentView.Content>
+		<Frame
+ 			Margin="20,5,20,5"
+			x:Name="varUCEFrame"
+			Grid.Row="0"
+			Grid.Column="0"
+			Padding="0"
+			HasShadow="false"
+			 CornerRadius="3"
+			BackgroundColor="#FF136D99"
+ 			VerticalOptions="CenterAndExpand">
+			<Grid
+				ColumnSpacing="0"
+				RowSpacing="0"
+				VerticalOptions="CenterAndExpand">
+				<Grid.RowDefinitions>
+					<RowDefinition 
+						Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition
+						Width="Auto" />
+				</Grid.ColumnDefinitions>
+				<StackLayout
+					Grid.Row="0"
+					Grid.Column="0"
+					WidthRequest="50"
+					Spacing="0"
+					VerticalOptions="Center"
+					x:Name="varUCEStackLayout"
+					Orientation="Vertical">
+					<Label
+						HorizontalTextAlignment="Center"
+						LineBreakMode="NoWrap"
+						Text="{Binding date}"
+						FontSize="24"
+						TextColor="White" />
+					<Label
+						Text="{Binding month}"
+						HorizontalTextAlignment="Center"
+						FontSize="12"
+						TextColor="#66B4D7" />
+				</StackLayout>
+				<Local:csmContentView
+					Margin="0,0,0,0"
+					CornerRadius="3"
+					Padding="10"
+					BackgroundColor="#144D72"
+ 					VerticalOptions="Center"
+ 					Grid.Row="0"
+					Grid.Column="1">
+					<StackLayout
+						Margin="0"
+						Spacing="0"
+						Orientation="Vertical">
+						<Label
+							FontSize="16"
+							LineBreakMode="TailTruncation"
+							TextColor="White"
+							Text="{Binding Name}" />
+						<StackLayout
+							Margin="1"
+							Spacing="5"
+							Orientation="Horizontal"
+							VerticalOptions="Center">
+							<Image
+								Aspect="AspectFit"
+								VerticalOptions="Center"
+								Source="marker_blue" />
+							<Label
+								VerticalTextAlignment="Center"
+								FontSize="12"
+								TextColor="#A5CCB3"
+								LineBreakMode="TailTruncation"
+								Text="{Binding venue}" />
+							<Label
+								HeightRequest="15"
+								FontSize="12"
+								LineBreakMode="TailTruncation"
+								VerticalTextAlignment="Center"
+								TextColor="White"
+								Text="{Binding timetext}" />
+						</StackLayout>
+					</StackLayout>
+				</Local:csmContentView>
+			</Grid>
+		</Frame>
+	</ContentView.Content>
+</ContentView>

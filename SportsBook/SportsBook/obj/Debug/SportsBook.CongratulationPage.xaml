@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns         ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class        ="SportsBook.CongratulationPage"
+	BackgroundColor="#0c3851">
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout>
+				<RelativeLayout
+					BackgroundColor="Transparent">
+					<BoxView
+						Color                         ="#16a8d1"
+						HeightRequest                 ="110"
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+					<Label
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=1}"
+						FontSize                      ="20"
+						HorizontalTextAlignment       ="Center"
+						VerticalTextAlignment         ="Center"
+						HeightRequest                 ="80"
+						Text                          ="Registered"
+						TextColor                     ="White" />
+					<Image
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=0.5, Constant= -35}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y, Constant=70}"
+						Source                    ="icon_done.png"
+						HeightRequest             ="70"
+						WidthRequest              ="70"
+						Aspect                    ="AspectFit" />
+				</RelativeLayout>
+			</StackLayout>
+			<StackLayout
+				Spacing          ="50"
+				HorizontalOptions="Center"
+				VerticalOptions  ="CenterAndExpand">
+				<StackLayout>
+					<Label
+						FontSize               ="34"
+						HorizontalTextAlignment="Center"
+						VerticalTextAlignment  ="Center"
+						Text                   ="Congratulation!"
+						TextColor              ="#80c7a6" />
+					<Label
+						FontSize               ="24"
+						HorizontalTextAlignment="Center"
+						VerticalTextAlignment  ="Center"
+						Text                   ="you are now registered"
+						TextColor              ="White" />
+					<Label
+						FontSize               ="16"
+						WidthRequest           ="300"
+						HorizontalOptions      ="Center"
+						HorizontalTextAlignment="Center"
+						VerticalTextAlignment  ="Center"
+						Text                   ="Complete your profile by adding few more details."
+						TextColor              ="#CEDFE0" />
+				</StackLayout>
+				<StackLayout
+					WidthRequest     ="280"
+					HorizontalOptions="Center"
+					VerticalOptions  ="CenterAndExpand">
+					<Button
+						Text           ="ADD CHILD"
+						Margin         ="0,0,0,0"
+						BorderRadius   ="20"
+						BackgroundColor="#16A8D1"
+						FontAttributes ="Bold"
+						FontSize       ="18"
+						TextColor      ="White"
+						Clicked="Handle_Clicked_Add_Child"/>
+					<Button
+						Text           ="Skip"
+						Margin         ="0,0,0,0"
+						BorderRadius   ="20"
+						BackgroundColor="Transparent"
+						HeightRequest  ="40"
+						FontAttributes ="Bold"
+						TextColor      ="White" 
+						Clicked="Handle_Clicked_Skip"/>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

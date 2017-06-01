@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Local="clr-namespace:SportsBook;assembly:SportsBook" x:Class="SportsBook.ParentProfilePage" Title="Profile" BackgroundColor="{x:Static Local:AppConstants.AppBackgroundColor}">
+	<ContentPage.Content>
+		<RelativeLayout BackgroundColor="Transparent">
+			<BoxView BackgroundColor="#16A9D1" HeightRequest="60" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+			<ScrollView BackgroundColor="Transparent" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+				<StackLayout BackgroundColor="#1D5E83" VerticalOptions="Start" Spacing="1" Margin="15,20,15,20">
+					<Grid BackgroundColor="White" RowSpacing="0" Padding="0,10,10,10">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="110" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Local:ImageCircle Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" Source="people" BackgroundColor="Transparent" HeightRequest="80" WidthRequest="80" VerticalOptions="Start" HorizontalOptions="Center" />
+						<Label Grid.Row="0" Grid.Column="1" FontSize="24" TextColor="#22385C" HorizontalOptions="Start" Text="Diana Mitchell" />
+						<Label Grid.Row="1" Grid.Column="1" FontSize="18" TextColor="#15A7D1" HorizontalOptions="Start" Text="Los Angeles, CA" />
+						<Label Grid.Row="2" Grid.Column="1" FontSize="12" TextColor="#C4CAD3" HorizontalOptions="Start" Text="E-MAIL" />
+						<Label Grid.Row="3" Grid.Column="1" FontSize="13" TextColor="#111111" HorizontalOptions="Start" Text="diana.mitchell@gmail.com" />
+						<Label Grid.Row="4" Grid.Column="1" FontSize="12" TextColor="#C4CAD3" HorizontalOptions="Start" Text="CONTACT" />
+						<Label Grid.Row="5" Grid.Column="1" FontSize="13" TextColor="#111111" HorizontalOptions="Start" Text="+00 896 497 232" />
+					</Grid>
+					<Grid BackgroundColor="#1681AD" VerticalOptions="Start">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="70" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="50" />
+							<ColumnDefinition Width="120" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Button Grid.Row="0" Grid.Column="0" HeightRequest="40" WidthRequest="40" BackgroundColor="Transparent" BorderRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Image="notification" />
+						<Label Grid.Row="0" Grid.Column="1" Text="Steve Mitchell" FontSize="16" TextColor="#FFFFFF" HorizontalOptions="Start" VerticalTextAlignment="Center" BackgroundColor="Transparent" />
+						<ScrollView Grid.Row="0" Grid.Column="2" Orientation="Horizontal" BackgroundColor="Transparent" Padding="0,0,5,0">
+							<StackLayout Orientation="Horizontal">
+								<Local:ImageCircle Source="people" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" />
+								<Local:ImageCircle Source="people" BackgroundColor="Transparent" HeightRequest="50" WidthRequest="50" Opacity="0.7" />
+								<Local:ImageCircle Source="people" BackgroundColor="Transparent" HeightRequest="50" WidthRequest="50" Opacity="0.4" />
+							</StackLayout>
+						</ScrollView>
+					</Grid>
+					<Grid BackgroundColor="#144D74" VerticalOptions="Start" RowSpacing="0" Padding="0,10,0,10">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="1" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="50,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="DATE OF BIRTH" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="02/02/2000" HorizontalTextAlignment="Start" />
+						</StackLayout>
+						<BoxView Grid.Row="0" Grid.Column="1" WidthRequest="1" BackgroundColor="#1D5E83" HorizontalOptions="Center" VerticalOptions="EndAndExpand"  Margin="0,0,0,-10"/>
+						<StackLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="20,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="SCHOOL" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="Mission San Jose" HorizontalTextAlignment="Start" />
+						</StackLayout>
+					</Grid>
+					<Grid BackgroundColor="#144D74" VerticalOptions="Start" RowSpacing="0" Padding="0,10,0,10">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="1" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="50,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="SPORTS" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="Soccer" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="Cricket" HorizontalTextAlignment="Start" />
+						</StackLayout>
+						<BoxView Grid.Row="0" Grid.Column="1" WidthRequest="1" BackgroundColor="#1D5E83" HorizontalOptions="Center" VerticalOptions="EndAndExpand"  Margin="0,0,0,-10"/>
+						<StackLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="20,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="POSITION" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="GoalKeeper" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="Batsman" HorizontalTextAlignment="Start" />
+						</StackLayout>
+					</Grid>
+					<Grid BackgroundColor="#144D74" VerticalOptions="Start" RowSpacing="0" Padding="0,10,0,10">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="1" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="50,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="HEIGHT" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="5 ft 2 in" HorizontalTextAlignment="Start" />
+						</StackLayout>
+						<BoxView Grid.Row="0" Grid.Column="1" WidthRequest="1" BackgroundColor="#1D5E83" HorizontalOptions="Center" VerticalOptions="EndAndExpand" Margin="0,0,0,-10"/>
+						<StackLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Start" BackgroundColor="Transparent" Spacing="1" Padding="20,0,5,0">
+							<Label TextColor="#8DB7C1" FontSize="12" BackgroundColor="Transparent" Text="WEIGHT" HorizontalTextAlignment="Start" />
+							<Label TextColor="#FFFFFF" FontSize="14" BackgroundColor="Transparent" Text="99.28 lbs" HorizontalTextAlignment="Start" />
+						</StackLayout>
+					</Grid>
+					<Grid BackgroundColor="#144D74" VerticalOptions="Start" ColumnSpacing="10" Padding="20">
+						<Button Grid.Row="0" Grid.Column="0" Text="Calendar" TextColor="#FFFFFF" BackgroundColor="#16A9D1" BorderRadius="20" WidthRequest="120" HorizontalOptions="End" VerticalOptions="Center" Clicked="Handle_Clicked"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="View More" TextColor="#FFFFFF" BackgroundColor="#16A9D1" BorderRadius="20" WidthRequest="120" HorizontalOptions="Start" VerticalOptions="Center" />
+					</Grid>
+				</StackLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>

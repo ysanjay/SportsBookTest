@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.ParentDashBoardV1Page"
+	xmlns:local="clr-namespace:SportsBook;assembly=SportsBook"
+	BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}">
+	<ContentPage.Content>
+
+		<Grid
+			RowSpacing="0">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="60"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="60"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+			<!-- Head -->
+			
+			<Grid
+				Grid.Row="0"
+				Grid.Column="0"
+				Padding="0,10,0,0"
+				BackgroundColor="{x:Static local:AppConstants.AppTopNavigationBarColor}">
+
+				<Grid.RowDefinitions></Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="50"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="50"/>
+				</Grid.ColumnDefinitions>
+
+				<Button
+						StyleId="0"
+						Grid.Row="0"
+						Grid.Column="0"
+						BackgroundColor="{x:Static local:AppConstants.AppTopNavigationBarColor}"
+						BorderRadius="0"
+						Image="menu">
+				</Button>
+				<Label
+					x:Name="varLabelTitle"
+					Grid.Row="0"
+					Grid.Column="1"
+					Text="Profile"
+					BackgroundColor="Transparent"
+					HorizontalTextAlignment="Center"
+					VerticalTextAlignment="Center"
+					TextColor="#FFFFFF"
+					FontSize="20"
+					FontAttributes="Bold">
+				</Label>
+				<Button
+						StyleId="0"
+						Grid.Row="0"
+						Grid.Column="2"
+						BackgroundColor="{x:Static local:AppConstants.AppTopNavigationBarColor}"
+						BorderRadius="0"
+						Image="email">
+				</Button>
+			</Grid>
+
+
+			<!-- Center of Body -->
+
+			<StackLayout
+				x:Name="varStackLayoutBody"
+				Grid.Row="1"
+				Grid.Column="0"
+				BackgroundColor="Transparent"
+				Padding="0,0,0,0"
+				>
+
+			</StackLayout>
+
+
+			<!-- Bottom -->
+
+			<RelativeLayout
+				Grid.Row="2"
+				Grid.Column="0"
+				BackgroundColor="#18566D">
+				<Grid
+					x:Name="varGridForTab"
+					ColumnSpacing="1"
+					BackgroundColor="Transparent"
+					Padding="0,1,0,0"
+					RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+					RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+					<Button
+						x:Name="Profile"
+						StyleId="0"
+						Grid.Row="0"
+						Grid.Column="0"
+						BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}"
+						BorderRadius="0"
+						Image="profile"
+						Clicked="Handle_Clicked_Tab">
+					</Button>
+					<Button
+						x:Name="Coaches"
+						StyleId="1"
+						Grid.Row="0"
+						Grid.Column="1"
+						BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}"
+						BorderRadius="0"
+						Image="coach"
+						Clicked="Handle_Clicked_Tab">
+					</Button>
+					<Button
+						x:Name="Payment"
+						StyleId="2"
+						Grid.Row="0"
+						Grid.Column="2"
+						BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}"
+						BorderRadius="0"
+						Image="payment"
+						Clicked="Handle_Clicked_Tab">
+					</Button>
+					<Button
+						x:Name="Privacy"
+						StyleId="3"
+						Grid.Row="0"
+						Grid.Column="3"
+						BackgroundColor="{x:Static local:AppConstants.AppBackgroundColor}"
+						BorderRadius="0"
+						Image="settings"
+						Clicked="Handle_Clicked_Tab">
+					</Button>
+
+					<BoxView
+							Grid.Row="0"
+							Grid.Column="0"
+						x:Name="varBoxViewForShowSelectedTab"
+						BackgroundColor="White"
+						HeightRequest="5"
+						VerticalOptions="End"
+						HorizontalOptions="Center"
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}">
+					</BoxView>
+				</Grid>
+			</RelativeLayout>
+			
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

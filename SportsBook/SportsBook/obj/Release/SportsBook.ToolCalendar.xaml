@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns ="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SportsBook.ToolCalendar"
+	BackgroundColor="#3A6085">
+	<ContentView.Content>
+
+				<!-- Calendar -->
+
+				<Grid
+					x:Name="gCalendar"
+					Grid.Row="0"
+					Grid.Column="0"
+					BackgroundColor="#3A6085"
+					RowSpacing="1"
+					Margin="0">
+
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="30" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+
+
+					<Grid
+						x:Name="gDayName"
+						Grid.Row="0"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Label Grid.Row="0" Grid.Column="0" Text="SUN" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="1" Text="MON" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="2" Text="TUE" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="3" Text="WEN" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="4" Text="THU" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="5" Text="FRI" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+						<Label Grid.Row="0" Grid.Column="6" Text="SAT" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+					</Grid>
+					<Grid
+						Grid.Row="1"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="26" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="27" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="28" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="29" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="30" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="31" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="1" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+					</Grid>
+					<Grid
+						Grid.Row="2"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="2" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="3" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="4" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="5" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="6" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="7" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="8" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+					</Grid>
+					<Grid
+						Grid.Row="3"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="9" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked"  BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="10" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="11" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="12" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="13" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="14" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="15" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+					</Grid>
+					<Grid
+						Grid.Row="4"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="16" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="17" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="18" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="19" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="20" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="21" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="22" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+					</Grid>
+					<Grid
+						Grid.Row="5"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="23" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="24" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="25" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="26" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="27" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="28" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="29" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+					</Grid>
+					<Grid
+						Grid.Row="6"
+						Grid.Column="0"
+						BackgroundColor="#3A6085">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" Text="30" TextColor="#FFFFFF" FontSize="12" FontAttributes="Bold" Clicked="Handle_Clicked" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="1" Text="1" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="2" Text="2" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="3" Text="3" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="4" Text="4" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="5" Text="5" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+						<Button Grid.Row="0" Grid.Column="6" Text="6" TextColor="#4F7D9D" FontSize="12" FontAttributes="Bold" IsEnabled="false" BackgroundColor="Transparent"/>
+					</Grid>
+
+					<Grid
+						Grid.Row="7"
+						Grid.Column="0"
+						BackgroundColor="Transparent">
+
+						<Grid.RowDefinitions></Grid.RowDefinitions>
+						<Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+
+						<Button Grid.Row="0" Grid.Column="0" BackgroundColor="#0C3851" HeightRequest="5" WidthRequest="90" HorizontalOptions="Center" VerticalOptions="Center"/>
+					</Grid>
+				</Grid>
+
+		
+	</ContentView.Content>
+</ContentView>
